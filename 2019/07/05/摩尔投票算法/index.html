@@ -272,7 +272,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">496</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">479</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -423,7 +423,7 @@ height:50vh;
 <p><strong>显然在这前面这一过程中,随着count值的递增递减到归0我们消耗了相同数量的非众数和众数</strong></p>
 <p>这是我认为投票算法最重要的思想,通过这样的往复,遍历结束后,最终候选众数即为该数组众数</p>
 <h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><p>附上本人用C实现上述例子:</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">majorityElement</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> count = <span class="number">1</span>,res = nums[<span class="number">0</span>];	<span class="comment">//res即为候选众数,初始第一项</span></span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(i &lt; numsSize - <span class="number">1</span>)&#123;</span><br><span class="line">        count += (nums[i] == res ? <span class="number">1</span>:<span class="number">-1</span>);	</span><br><span class="line">        <span class="keyword">if</span> (!count)&#123;	</span><br><span class="line">            res = nums[++i];</span><br><span class="line">            count = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">majorityElement</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> count = <span class="number">0</span>,res = nums[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(i &lt; numsSize)&#123;</span><br><span class="line">        <span class="keyword">if</span> (!count)</span><br><span class="line">            res = nums[i];</span><br><span class="line">        count += (nums[i] == res ? <span class="number">1</span>:<span class="number">-1</span>);</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>AsahiHuang<br>2019.7.5 at 530</p>
 
@@ -434,7 +434,7 @@ height:50vh;
             <p>原文作者：<a href="https://asahihuang.github.io">Asahi Huang</a>
             <p>原文链接：<a href="https://asahihuang.github.io/2019/07/05/摩尔投票算法/">https://asahihuang.github.io/2019/07/05/摩尔投票算法/</a>
             <p>发表日期：<a href="https://asahihuang.github.io/2019/07/05/摩尔投票算法/">July 5th 2019, 3:04:23 pm</a>
-            <p>更新日期：<a href="https://asahihuang.github.io/2019/07/05/摩尔投票算法/">July 5th 2019, 3:45:46 pm</a>
+            <p>更新日期：<a href="https://asahihuang.github.io/2019/07/05/摩尔投票算法/">July 5th 2019, 3:58:16 pm</a>
             <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -626,6 +626,8 @@ top:50vh;
     
     
     
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
         Total : 4
@@ -667,11 +669,11 @@ top:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="ACG"><span class="iconfont-archer">&#xe606;</span>ACG</span>
-    
         <span class="sidebar-tag-name" data-tags="算法"><span class="iconfont-archer">&#xe606;</span>算法</span>
     
         <span class="sidebar-tag-name" data-tags="git"><span class="iconfont-archer">&#xe606;</span>git</span>
+    
+        <span class="sidebar-tag-name" data-tags="ACG"><span class="iconfont-archer">&#xe606;</span>ACG</span>
     
         <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
     
