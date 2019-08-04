@@ -2,7 +2,7 @@
 title: Thinkpad-P51-Hackintosh
 date: 2019-08-04 10:04:30
 tags: 黑苹果
-header_image: Thinkpad-P51-Hackintosh/4K.png
+header_image: http://ww1.sinaimg.cn/large/006tNc79gy1g5nhe3y6csj31hc0u07wh.jpg
 ---
 
 ![](http://ww4.sinaimg.cn/large/006tNc79gy1g5ng1piwfqj312s0t8gvo.jpg)
