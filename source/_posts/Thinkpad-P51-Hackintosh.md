@@ -9,7 +9,7 @@ header_image: http://ww1.sinaimg.cn/large/006tNc79gy1g5nhe3y6csj31hc0u07wh.jpg
 
 <!--more-->
 
-针对本机型在GitHUb上传过一个EFI针对10.14.2的，基本完美
+针对本机型在GitHub上传过一个EFI针对10.14.2
 https://github.com/AsahiHuang/ThinkPadP51-Hackintosh
 
 目前已经更新到10.14.6，更新前注意更新clover版本，老版本alc睡眠唤醒会造成无声，请更新lilu组建，详细方法见上面链接
