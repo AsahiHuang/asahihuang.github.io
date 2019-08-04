@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://asahihuang.github.io/"/>
-  <updated>2019-08-04T02:39:42.810Z</updated>
+  <updated>2019-08-04T03:24:43.564Z</updated>
   <id>https://asahihuang.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://asahihuang.github.io/Thinkpad-P51-Hackintosh/"/>
     <id>https://asahihuang.github.io/Thinkpad-P51-Hackintosh/</id>
     <published>2019-08-04T02:04:30.000Z</published>
-    <updated>2019-08-04T02:39:42.810Z</updated>
+    <updated>2019-08-04T03:24:43.564Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1g5ng1piwfqj312s0t8gvo.jpg" alt></p><a id="more"></a><p>针对本机型在GitHUb上传过一个EFI针对10.14.2的，基本完美<br><a href="https://github.com/AsahiHuang/ThinkPadP51-Hackintosh" target="_blank" rel="noopener">https://github.com/AsahiHuang/ThinkPadP51-Hackintosh</a></p><p>目前已经更新到10.14.6，更新前注意更新clover版本，老版本alc睡眠唤醒会造成无声，请更新lilu组建，详细方法见上面链接</p><p>本机的主要配置信息： </p><table><thead><tr><th>设备</th><th>描述</th></tr></thead><tbody><tr><td>CPU</td><td>i7-7700HQ</td></tr><tr><td>显卡</td><td>HD630</td></tr><tr><td>屏幕</td><td>4k（京东方）</td></tr><tr><td>内存</td><td>16G</td></tr><tr><td>硬盘</td><td>sm961</td></tr></tbody></table><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g5nfwjjpdij31890u0tmm.jpg" alt></p><p>如果你的机型和我差不多的话最方便的办法把下载的镜像写入u盘后直接替换我的EFI文件，<strong>注意包括序列号在内的SMBIOS信息已移除自行修改</strong> </p><p>至于说原生网卡的好处，配合aw解锁啦</p><p><img src="http://ww1.sinaimg.cn/large/006tNc79gy1g5nfu21935j30y60u04ct.jpg" alt></p>]]></content>
     
