@@ -7,7 +7,7 @@ author: AsahiHuang
 signature: 相信的心就是你的魔法
 # SNS (you can custom the order)
 social:
-  email: hx233@live.com
+  email: mail@asahih.com 
   github: https://github.com/AsahiHuang
   # wechat and qq should be a path of qr-code image
   wechat: "/img/wechat-qr.png"
@@ -45,11 +45,11 @@ SEO_keywords:
   - Asahi
   - 'asahi-blog'
 # main title shown in header image
-main_title: Asahi-Blog
+main_title: Asahi's Blog
 # subtitle
 subtitle: Cor quod te credit est tui magica! 
 # site haeder image
-site_header_image: '/img/index-bg2.png'
+site_header_image: 'http://ww1.sinaimg.cn/large/006tNc79gy1g5uasbc7bqj315o0ng407.jpg'
 # post haeder image
 post_header_image: '/img/post-bg.jpg'
 # 404 image
