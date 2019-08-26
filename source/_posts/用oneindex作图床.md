@@ -5,9 +5,13 @@ tags: oneindex
 header_image: https://pan.asahih.com/?/images/2019/08/26/Dnypm0L4Ku/Konachan.com%20-%2066825%20sample.jpg
 ---
 
+
+
 ![](https://pan.asahih.com/?/images/2019/08/26/2vM78DrzsQ/oneindex-1.png)
 
 自己的博客写文章最麻烦的莫过于图片的插入了，一个好的图床工具能减轻不少负担，本着勤俭节约（qiong）的原则，一直想找个免费的图床。
+
+<!--more-->
 
 之前一直使用的ipic+微博图床，虽免费好用，奈何只用了几次就挂了好几张。之前考虑过七牛云，不过https不计入免费流量，后来因为个人版的ondrive送的30G要满了，加了个家庭车群想上车，在那里，oneindex进入我的视线。oneindex旨在将onedrive部署为个人的公盘，同时还可以作为在线的图床工具，正好我也有个vps，存储只有25G，加上还有个office365 e3的1T账户，等同于为我的vps扩容了，oneindex内容的访问不计入vps的带宽，自带的图床工具虽然简单，但提供了三种引用格式。比不上ipic拖拽复制方便但也足够实用了(*本文所有图片都来自oneindex的图床*)，只是图片加载速度慢了点。
 
