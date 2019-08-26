@@ -5,7 +5,7 @@ tags: oneindex
 header_image: https://pan.asahih.com/?/images/2019/08/26/Dnypm0L4Ku/Konachan.com%20-%2066825%20sample.jpg
 ---
 
-{% asset_img https://pan.asahih.com/?/images/2019/08/26/2vM78DrzsQ/oneindex-1.png%}
+![](https://pan.asahih.com/?/images/2019/08/26/2vM78DrzsQ/oneindex-1.png)
 
 自己的博客写文章最麻烦的莫过于图片的插入了，一个好的图床工具能减轻不少负担，本着勤俭节约（qiong）的原则，一直想找个免费的图床。
 
