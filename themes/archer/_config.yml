@@ -7,11 +7,11 @@ author: AsahiHuang
 signature: 相信的心就是你的魔法
 # SNS (you can custom the order)
 social:
-  email: mail@asahih.com 
+  email: hx233@live.com 
   github: https://github.com/AsahiHuang
   # wechat and qq should be a path of qr-code image
-  wechat: "/img/wechat-qr.png"
-  qq: "/img/qq-qr.png"
+  # wechat: "/img/wechat-qr.png"
+  # qq: "/img/qq-qr.png"
   telegram: https://t.me/AsahiHuang
   weibo: 
   zhihu: 
@@ -39,13 +39,13 @@ about:
 
 # ========== Site ========== #
 # title of the site (good for SEO)
-SEO_title: asahi-blog
+SEO_title: blog.asahi 
 # keywords for site (good for SEO)
 SEO_keywords:
   - Asahi
-  - 'asahi-blog'
+  - 'blog.asahi'
 # main title shown in header image
-main_title: Asahi's Blog
+main_title: Blog.Asahi
 # subtitle
 subtitle: Cor quod te credit est tui magica! 
 # site haeder image
@@ -91,7 +91,7 @@ busuanzi: true
 # fill in pv or uv
 busuanzi_pv_or_uv: 'pv'
 # custom analytic slogan, '${count}' is the analytic number, DO NOT modify it.
-busuanzi_slug: 'PV: ${count} :)'
+busuanzi_slug: '~_^: ${count} :)'
 # Baidu analytics
 baidu_analytics: 
 # Google analytics
@@ -116,4 +116,4 @@ about_intro_height: 50
 copyright:
   enable: true
   # https://creativecommons.org/
-  license: '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
+  license: '©2019 AsahiH   by AsahiHuang'
