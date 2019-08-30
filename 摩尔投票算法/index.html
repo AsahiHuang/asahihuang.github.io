@@ -131,7 +131,7 @@
                 
                     
                     
-                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/AsahiHuang">
                         
                         <i class="fab fa-github"></i>
                         
@@ -187,19 +187,19 @@
 
 <h2 id="Boyer-Moore-投票算法"><a href="#Boyer-Moore-投票算法" class="headerlink" title="Boyer-Moore 投票算法"></a>Boyer-Moore 投票算法</h2><p>少数服从多数的<strong>摩尔投票算法</strong>就是其中之一的解决之道</p>
 <p>这里按照找众数的题来解释算法的实现过程:</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nums:[1,1,2,1,2,2,2,1,2]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nums:[1,1,2,1,2,2,2,1,2]</span><br></pre></td></tr></table></figure>
 
 <p>比如说该数组nums,显然众数是 <strong>2</strong></p>
 <p>首先我们设置一个候选众数,初始为第一个元素nums[0]</p>
 <p>我们设置一个计数器count,初始值为1,其规则是遇到与候选众数相同的数是+1,不同-1</p>
 <p>当count值为0时,我们让候选众数变为下一位,并将count重置为1,继续上述规则</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[1,1,2,1,2 | 2,1,2]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[1,1,2,1,2 | 2,1,2]</span><br></pre></td></tr></table></figure>
 
 <p>分隔处为count归0时,此时候选众数变为下一位<strong>2</strong>,count值回到1</p>
 <p><strong>显然在这前面这一过程中,随着count值的递增递减到归0我们消耗了相同数量的非众数和众数</strong></p>
 <p>这是我认为投票算法最重要的思想,通过这样的往复,遍历结束后,最终候选众数即为该数组众数</p>
 <h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><p>附上本人用C实现上述例子:</p>
-<figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">majorityElement</span><span class="hljs-params">(<span class="hljs-keyword">int</span>* nums, <span class="hljs-keyword">int</span> numsSize)</span></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">int</span> count = <span class="hljs-number">0</span>,res = nums[<span class="hljs-number">0</span>];</span><br><span class="line">    <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">while</span>(i &lt; numsSize)&#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (!count)</span><br><span class="line">            res = nums[i];</span><br><span class="line">        count += (nums[i] == res ? <span class="hljs-number">1</span>:<span class="hljs-number">-1</span>);</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">majorityElement</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> count = <span class="number">0</span>,res = nums[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(i &lt; numsSize)&#123;</span><br><span class="line">        <span class="keyword">if</span> (!count)</span><br><span class="line">            res = nums[i];</span><br><span class="line">        count += (nums[i] == res ? <span class="number">1</span>:<span class="number">-1</span>);</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>AsahiHuang<br>2019.7.5 at 530</p>
 
@@ -904,7 +904,7 @@
                 </p>
                 
                 <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="My GitHub" href="https://github.com/AsahiHuang">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/AsahiHuang">
                         
                         <i class="fab fa-github"></i>
                         
