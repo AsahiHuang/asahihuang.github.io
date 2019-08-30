@@ -177,12 +177,12 @@
             
         </h1>
         <div class="content">
-            <h2 id="初始配置"><a href="#初始配置" class="headerlink" title="初始配置"></a>初始配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;</span><br><span class="line">git config --global user.email &quot;email&quot;</span><br><span class="line"></span><br><span class="line">--global参数可以保证机器上所有的git仓库使用这个配置</span><br></pre></td></tr></table></figure>
+            <h2 id="初始配置"><a href="#初始配置" class="headerlink" title="初始配置"></a>初始配置</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;</span><br><span class="line">git config --global user.email &quot;email&quot;</span><br><span class="line"></span><br><span class="line">--global参数可以保证机器上所有的git仓库使用这个配置</span><br></pre></td></tr></table></figure>
 
 <p>然后输入</p>
 <a id="more"></a>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
 
 <h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><p>   查看分支：git branch<br>   创建分支：git branch name<br>   切换分支：git checkout name</p>
 <p>   创建+切换分支：git checkout –b name<br>   合并某分支到当前分支：git merge name<br>   删除分支：git branch –d name</p>
@@ -194,7 +194,7 @@
 <li><p>github上创建新的仓库</p>
 </li>
 <li><p>根据GitHub仓库链接 </p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/AsahiHuang/Data_Structure.git</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/AsahiHuang/Data_Structure.git</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>将本地仓库推送到远程仓库 ,git push,实际将当前分支推送到远程</p>
 <blockquote>
@@ -202,16 +202,16 @@
 </blockquote>
 </li>
 <li><p>现在,只要本地作提交,可通过</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
 
 <p> 把本地master分支的最新修改推送到GitHub</p>
 </li>
 </ol>
-<h2 id="文件修改回退"><a href="#文件修改回退" class="headerlink" title="文件修改回退"></a>文件修改回退</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset  –hard HEAD~100</span><br></pre></td></tr></table></figure>
+<h2 id="文件修改回退"><a href="#文件修改回退" class="headerlink" title="文件修改回退"></a>文件修改回退</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset  –hard HEAD~100</span><br></pre></td></tr></table></figure>
 
 <p>指向上次修改的指针</p>
 <p>或者</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout  -- filename</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout  -- filename</span><br></pre></td></tr></table></figure>
 
 <p>把filename文件在工作区的修改全部撤销</p>
 <blockquote>
@@ -222,24 +222,24 @@
 </ol>
 </blockquote>
 <p>再没有commit前,通过此命令也可将删除的文件(rm filename)恢复</p>
-<h2 id="远程仓库克隆"><a href="#远程仓库克隆" class="headerlink" title="远程仓库克隆"></a>远程仓库克隆</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 远程仓库地址</span><br></pre></td></tr></table></figure>
+<h2 id="远程仓库克隆"><a href="#远程仓库克隆" class="headerlink" title="远程仓库克隆"></a>远程仓库克隆</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 远程仓库地址</span><br></pre></td></tr></table></figure>
 
 <p>即可在本地生成一个版本库</p>
 <h2 id="分支策略"><a href="#分支策略" class="headerlink" title="分支策略"></a>分支策略</h2><p>​    常合并分支时，git一般使用”Fast forward”模式，在这种模式下，删除分支后，会丢掉分支信息，现在我们来使用带参数 –no-ff来禁用”Fast forward”模式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge –-no-ff  -m &quot;注释&quot; 合并分支</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge –-no-ff  -m &quot;注释&quot; 合并分支</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>分支策略：首先master主分支应该是非常稳定的，也就是用来发布新版本，一般情况下不允许在上面干活，干活一般情况下在新建的dev分支上干活，干完后，比如上要发布，或者说dev分支代码稳定后可以合并到主分支master上来。</p>
 </blockquote>
 <h2 id="bug分支"><a href="#bug分支" class="headerlink" title="bug分支"></a>bug分支</h2><p>​    在开发中，会经常碰到bug问题，那么有了bug就需要修复，在Git中，分支是很强大的，每个bug都可以通过一个临时分支来修复，修复完成后，合并分支，然后将临时的分支删除掉。<br>比如我在开发中接到一个404 bug时候，我们可以创建一个404分支来修复它，但是当前的dev分支上的工作到一半还没有提交,此时无法切换分支.</p>
 <p>​    Git提供了<strong>stash</strong> 功能,可以把当前的工作现场隐藏,等恢复现场后继续工作</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash</span><br></pre></td></tr></table></figure>
 
 <p>此时工作区的状态时干净的</p>
 <p>切换回主分支,新建一个临时分支,修复完成后,回到主分支并合并,删除临时分支</p>
 <p>现在回到dev分支</p>
 <p>此时工作区时干净的,可通过</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash list</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash list</span><br></pre></td></tr></table></figure>
 
 <p>查看,</p>
 <p>Git把stash内容存在某个地方了，但是需要恢复一下,两种办法:</p>
@@ -249,7 +249,7 @@
 </ol>
 <h2 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h2><ol>
 <li><p>查看日志</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure>
 
 
 
@@ -258,7 +258,7 @@
 <ol start="2">
 <li><p>修改日志</p>
 <p> 最近一次commit的修改:</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit --amend</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit --amend</span><br></pre></td></tr></table></figure>
 
 </li>
 </ol>
@@ -314,6 +314,27 @@
 </div>
 
 
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: 'WHvLmCbhgd0Sb6TzRj09vl7u-gzGzoHsz',
+        app_key: 'OFWpYkGVAiEvcL488yYTESL9',
+        placeholder: '⁄(⁄ ⁄ ⁄ω⁄ ⁄ ⁄)⁄'
+    });
+</script>
+
+    </div>
+</div>
 </div>
                 
 
