@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Bolg.Asahih</title>
+  <title>Blog-Asahi</title>
   <icon>https://www.gravatar.com/avatar/1e701b8870303a644f28f38565fe4fe0</icon>
   <subtitle>相信的心就是你的魔法</subtitle>
   <link href="/atom.xml" rel="self"/>
