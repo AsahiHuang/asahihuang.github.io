@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-30 21:21:43
- * @LastEditTime: 2019-08-30 22:02:36
+ * @LastEditTime: 2019-08-31 16:04:31
  * @LastEditors: Please set LastEditors
  */
 const ap = new APlayer({
@@ -10,7 +10,6 @@ const ap = new APlayer({
     fixed: true,
     autoplay: true,
     loop: 'none',
-    preload: 'auto',
     mutex: 'true',
     audio: [
       {
