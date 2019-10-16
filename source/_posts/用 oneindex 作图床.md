@@ -2,6 +2,7 @@
 title: 用 oneindex 作图床
 date: 2019-08-26 20:57:44
 tags: oneindex
+categories: 笔记
 header_image: https://pan.asahih.com/?/images/2019/08/26/Dnypm0L4Ku/Konachan.com%20-%2066825%20sample.jpg
 ---
 
