@@ -26,7 +26,7 @@
 <meta property="og:description" content="对单向链表的反转是非常经典的算法题，链表不同于数组，节点的遍历需要每个节点逐个访问下去。理解反转的过程能对线性表的链式存储结构有个充分的认识。为了方便理解（也为了防止日后忘了）所以尽可能仔细的讲解其过程。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://asahihuang.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-10-16T14:32:57.536Z">
+<meta property="og:updated_time" content="2019-10-16T23:21:11.314Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="单向链表的反转">
 <meta name="twitter:description" content="对单向链表的反转是非常经典的算法题，链表不同于数组，节点的遍历需要每个节点逐个访问下去。理解反转的过程能对线性表的链式存储结构有个充分的认识。为了方便理解（也为了防止日后忘了）所以尽可能仔细的讲解其过程。">
@@ -160,11 +160,15 @@
             <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-10-16T14:15:11.000Z">2019-10-16</time>
                 
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/笔记/">笔记</a>
+                </div>
+                
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    8 分钟 读完 (大约 1230 个字)
+                    8 分钟 读完 (大约 1232 个字)
                 </span>
                 
                 
@@ -202,7 +206,7 @@
 <p>不可以，不同于头插法那时我们一直在生成新的p节点，现在<strong>如果直接让 p 的下一节点指向新的表尾，那我们就丢失了L表中 p -&gt; next，也就是p后继节点的位置</strong>，我们就没法遍历接下来的L表了，所以我们需要创建一个temp 来暂时存放p的后继节点，等到 p 也就是当前节点添加到新表完成后再让p回到temp继续。</p>
 <ol>
 <li>我们先创建一个节点指针temp，让temp=p-&gt;next存储p的后继节点信息</li>
-<li>接着我们就可以放心地让p指向新表的表尾（表尾是因为此时NewL还只是NULL）</li>
+<li>接着我们就可以放心地让p指向新表的表尾（表尾是因为此时NewL后继还只是NULL）</li>
 </ol>
 <figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">temp = p -&gt; next;	<span class="hljs-comment">//让temp存放p后驱节点</span></span><br><span class="line">p - &gt; next = NewL -&gt; next;	<span class="hljs-comment">//让p指向当前新表的后继</span></span><br></pre></td></tr></table></figure>
 
@@ -230,7 +234,7 @@
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/算法-数据结构/">算法,数据结构</a>
+                    <a class="has-link-grey -link" href="/tags/数据结构/">数据结构</a>, <a class="has-link-grey -link" href="/tags/算法/">算法</a>
                 </div>
             </div>
         </div>
@@ -342,7 +346,7 @@
                         分类
                     </p>
                     <p class="title has-text-weight-normal">
-                        0
+                        2
                     </p>
                 </div>
             </div>
@@ -429,7 +433,23 @@
                 分类
             </h3>
             <ul class="menu-list">
-            
+            <li>
+        <a class="level is-marginless" href="/categories/生活/">
+            <span class="level-start">
+                <span class="level-item">生活</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/笔记/">
+            <span class="level-start">
+                <span class="level-item">笔记</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">3</span>
+            </span>
+        </a></li>
             </ul>
         </div>
     </div>
@@ -441,7 +461,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/ACG/" style="font-size: 20px;">ACG</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/oneindex/" style="font-size: 10px;">oneindex</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/算法-数据结构/" style="font-size: 10px;">算法,数据结构</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a> <a href="/tags/黑苹果/" style="font-size: 10px;">黑苹果</a>
+        <a href="/tags/ACG/" style="font-size: 20px;">ACG</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/oneindex/" style="font-size: 10px;">oneindex</a> <a href="/tags/数据结构/" style="font-size: 10px;">数据结构</a> <a href="/tags/算法/" style="font-size: 20px;">算法</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a> <a href="/tags/黑苹果/" style="font-size: 10px;">黑苹果</a>
     </div>
 </div>
 
@@ -469,7 +489,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-16T14:15:11.000Z">2019-10-16</time></div>
                     <a href="/单向链表的反转/" class="title has-link-black-ter is-size-6 has-text-weight-normal">单向链表的反转</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/笔记/">笔记</a>
                     </p>
                 </div>
             </div>
@@ -488,7 +508,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-26T12:57:44.000Z">2019-08-26</time></div>
                     <a href="/用 oneindex 作图床/" class="title has-link-black-ter is-size-6 has-text-weight-normal">用 oneindex 作图床</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/笔记/">笔记</a>
                     </p>
                 </div>
             </div>
@@ -507,7 +527,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-11T13:44:09.000Z">2019-08-11</time></div>
                     <a href="/夕阳无限好/" class="title has-link-black-ter is-size-6 has-text-weight-normal">夕阳无限好</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/生活/">生活</a>
                     </p>
                 </div>
             </div>
@@ -649,16 +669,16 @@
                 </div>
                 
                 <div class="control">
-                    <a class="tags has-addons" href="/tags/算法/">
-                        <span class="tag">算法</span>
+                    <a class="tags has-addons" href="/tags/数据结构/">
+                        <span class="tag">数据结构</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
                 <div class="control">
-                    <a class="tags has-addons" href="/tags/算法-数据结构/">
-                        <span class="tag">算法,数据结构</span>
-                        <span class="tag is-grey">1</span>
+                    <a class="tags has-addons" href="/tags/算法/">
+                        <span class="tag">算法</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -712,7 +732,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-16T14:15:11.000Z">2019-10-16</time></div>
                     <a href="/单向链表的反转/" class="title has-link-black-ter is-size-6 has-text-weight-normal">单向链表的反转</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/笔记/">笔记</a>
                     </p>
                 </div>
             </div>
@@ -731,7 +751,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-26T12:57:44.000Z">2019-08-26</time></div>
                     <a href="/用 oneindex 作图床/" class="title has-link-black-ter is-size-6 has-text-weight-normal">用 oneindex 作图床</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/笔记/">笔记</a>
                     </p>
                 </div>
             </div>
@@ -750,7 +770,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-11T13:44:09.000Z">2019-08-11</time></div>
                     <a href="/夕阳无限好/" class="title has-link-black-ter is-size-6 has-text-weight-normal">夕阳无限好</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/生活/">生活</a>
                     </p>
                 </div>
             </div>
@@ -892,16 +912,16 @@
                 </div>
                 
                 <div class="control">
-                    <a class="tags has-addons" href="/tags/算法/">
-                        <span class="tag">算法</span>
+                    <a class="tags has-addons" href="/tags/数据结构/">
+                        <span class="tag">数据结构</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
                 <div class="control">
-                    <a class="tags has-addons" href="/tags/算法-数据结构/">
-                        <span class="tag">算法,数据结构</span>
-                        <span class="tag is-grey">1</span>
+                    <a class="tags has-addons" href="/tags/算法/">
+                        <span class="tag">算法</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
