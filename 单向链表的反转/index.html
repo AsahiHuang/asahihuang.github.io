@@ -26,7 +26,7 @@
 <meta property="og:description" content="对单向链表的反转是非常经典的算法题，链表不同于数组，节点的遍历需要每个节点逐个访问下去。理解反转的过程能对线性表的链式存储结构有个充分的认识。为了方便理解（也为了防止日后忘了）所以尽可能仔细的讲解其过程。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://asahihuang.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-10-16T23:21:11.314Z">
+<meta property="og:updated_time" content="2019-10-17T13:16:59.827Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="单向链表的反转">
 <meta name="twitter:description" content="对单向链表的反转是非常经典的算法题，链表不同于数组，节点的遍历需要每个节点逐个访问下去。理解反转的过程能对线性表的链式存储结构有个充分的认识。为了方便理解（也为了防止日后忘了）所以尽可能仔细的讲解其过程。">
@@ -172,7 +172,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    8 分钟 读完 (大约 1232 个字)
+                    8 分钟 读完 (大约 1246 个字)
                 </span>
                 
                 
@@ -231,6 +231,7 @@
 <figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">display</span><span class="hljs-params">(LinkList L)</span></span>&#123;</span><br><span class="line">    LinkList p;</span><br><span class="line">    <span class="hljs-comment">//指向第一个节点</span></span><br><span class="line">    p = L -&gt; next;</span><br><span class="line">    <span class="hljs-keyword">while</span> (p != <span class="hljs-literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>,p-&gt;date);</span><br><span class="line">        p = p -&gt; next;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>基本上就是迭代法实现单链表反转的过程。</p>
+<h3 id="递归法"><a href="#递归法" class="headerlink" title="递归法"></a>递归法</h3><p>等有空补上递归法。。。</p>
 
         </div>
         
@@ -418,6 +419,10 @@
         <a class="is-flex" href="#迭代法">
         <span class="has-mr-6">2.1</span>
         <span>迭代法</span>
+        </a></li><li>
+        <a class="is-flex" href="#递归法">
+        <span class="has-mr-6">2.2</span>
+        <span>递归法</span>
         </a></li></ul></li></ul>
         </div>
     </div>
