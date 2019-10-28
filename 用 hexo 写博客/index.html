@@ -181,24 +181,24 @@
             
         </h1>
         <div class="content">
-            <h2><span id="an-zhuang">安装</span><a href="#an-zhuang" class="header-anchor">#</a></h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure>
+            <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure>
 
 <p>在git bush中安装hexo</p>
 <a id="more"></a>
 
-<h2><span id="chu-shi-hua">初始化</span><a href="#chu-shi-hua" class="header-anchor">#</a></h2><p>新建一个hexo文件夹,用来存放所有代码.</p>
+<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>新建一个hexo文件夹,用来存放所有代码.</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init	//初始化</span><br></pre></td></tr></table></figure>
 
 <p>hexo 会自动下载需要文件.</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g //生成</span><br><span class="line">hexo s //启动本地服务</span><br></pre></td></tr></table></figure>
 
 <p>打开浏览器访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 即可看到内容</p>
-<h2><span id="xiu-gai-zhu-ti">修改主题</span><a href="#xiu-gai-zhu-ti" class="header-anchor">#</a></h2><p>​    找到官方主题:<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a> 下载到hexo目录的theme文件下</p>
+<h2 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h2><p>​    找到官方主题:<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a> 下载到hexo目录的theme文件下</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone #主题仓库地址*  /theme</span><br></pre></td></tr></table></figure>
 
 <p>修改根目录的_config.yml 中的 <strong>theme: landsape</strong> 改为 *<em>theme: #NewThemeName# *</em></p>
 <p>如果出现莫名其妙问题可通过*<em>hexo clean *</em>来清理,在生成并发布</p>
-<h2><span id="shang-chuan-dao-github">上传到GitHub</span><a href="#shang-chuan-dao-github" class="header-anchor">#</a></h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<h2 id="上传到GitHub"><a href="#上传到GitHub" class="headerlink" title="上传到GitHub"></a>上传到GitHub</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
 
 <p>首先,ssh key配置好,其次,配置_config.yml中有关deploy的部门: </p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:#githubID#/#githubID#.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
@@ -209,20 +209,20 @@
 
 <p>现在输入*<em>hexo d *</em> 就会将本次有改动的代码全部提交,没有改动的不会</p>
 <p>提交完成后原仓库内的文件都没了,存放在了source文件夹.</p>
-<h2><span id="chang-yong-hexo-ming-ling">常用hexo 命令</span><a href="#chang-yong-hexo-ming-ling" class="header-anchor">#</a></h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</span><br><span class="line">hexo deploy #部署到GitHub</span><br><span class="line">hexo help  # 查看帮助</span><br><span class="line">hexo version  #查看Hexo的版本</span><br></pre></td></tr></table></figure>
+<h2 id="常用hexo-命令"><a href="#常用hexo-命令" class="headerlink" title="常用hexo 命令"></a>常用hexo 命令</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</span><br><span class="line">hexo deploy #部署到GitHub</span><br><span class="line">hexo help  # 查看帮助</span><br><span class="line">hexo version  #查看Hexo的版本</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo s -g #生成并本地预览</span><br><span class="line">hexo d -g #生成并上传</span><br></pre></td></tr></table></figure>
 
-<h2><span id="xie-bo-ke">写博客</span><a href="#xie-bo-ke" class="header-anchor">#</a></h2><p>在git bash定位到hexo的根目录</p>
+<h2 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h2><p>在git bash定位到hexo的根目录</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &apos;my-first-blog&apos;</span><br></pre></td></tr></table></figure>
 
 <p>hexo就会在*<em>_posts *</em>下生成相关的md文件,然后再markdown编辑器上编写</p>
 <p>一般完整的格式:</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: postName #文章页面上的显示名称，一般是中文</span><br><span class="line">date: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改</span><br><span class="line">categories: 默认分类 #分类</span><br><span class="line">tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格</span><br><span class="line">description: 附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">以下是正文</span><br></pre></td></tr></table></figure>
 
-<h3><span id="rang-bo-wen-lie-biao-bu-xian-shi-quan-bu-nei-rong">让博文列表不显示全部内容</span><a href="#rang-bo-wen-lie-biao-bu-xian-shi-quan-bu-nei-rong" class="header-anchor">#</a></h3><p>默认情况下,生成的目录会显示全部的文章内容,可以再合适的位置加上</p>
+<h3 id="让博文列表不显示全部内容"><a href="#让博文列表不显示全部内容" class="headerlink" title="让博文列表不显示全部内容"></a>让博文列表不显示全部内容</h3><p>默认情况下,生成的目录会显示全部的文章内容,可以再合适的位置加上</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
 
 <p>即可</p>
@@ -403,33 +403,33 @@
                 目录
             </h3>
             <ul class="menu-list"><li>
-        <a class="is-flex" href="#undefined">
+        <a class="is-flex" href="#安装">
         <span class="has-mr-6">1</span>
-        <span>安装#</span>
+        <span>安装</span>
         </a></li><li>
-        <a class="is-flex" href="#undefined">
+        <a class="is-flex" href="#初始化">
         <span class="has-mr-6">2</span>
-        <span>初始化#</span>
+        <span>初始化</span>
         </a></li><li>
-        <a class="is-flex" href="#undefined">
+        <a class="is-flex" href="#修改主题">
         <span class="has-mr-6">3</span>
-        <span>修改主题#</span>
+        <span>修改主题</span>
         </a></li><li>
-        <a class="is-flex" href="#undefined">
+        <a class="is-flex" href="#上传到GitHub">
         <span class="has-mr-6">4</span>
-        <span>上传到GitHub#</span>
+        <span>上传到GitHub</span>
         </a></li><li>
-        <a class="is-flex" href="#undefined">
+        <a class="is-flex" href="#常用hexo-命令">
         <span class="has-mr-6">5</span>
-        <span>常用hexo 命令#</span>
+        <span>常用hexo 命令</span>
         </a></li><li>
-        <a class="is-flex" href="#undefined">
+        <a class="is-flex" href="#写博客">
         <span class="has-mr-6">6</span>
-        <span>写博客#</span>
+        <span>写博客</span>
         </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#undefined">
+        <a class="is-flex" href="#让博文列表不显示全部内容">
         <span class="has-mr-6">6.1</span>
-        <span>让博文列表不显示全部内容#</span>
+        <span>让博文列表不显示全部内容</span>
         </a></li></ul></li></ul>
         </div>
     </div>

@@ -26,7 +26,7 @@
 <meta property="og:description" content="对单向链表的反转是非常经典的算法题，链表不同于数组，节点的遍历需要每个节点逐个访问下去。理解反转的过程能对线性表的链式存储结构有个充分的认识。为了方便理解（也为了防止自己日后忘了）所以尽可能仔细的记录其过程。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://asahihuang.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-10-28T23:21:20.738Z">
+<meta property="og:updated_time" content="2019-10-28T23:29:11.260Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="单向链表的反转">
 <meta name="twitter:description" content="对单向链表的反转是非常经典的算法题，链表不同于数组，节点的遍历需要每个节点逐个访问下去。理解反转的过程能对线性表的链式存储结构有个充分的认识。为了方便理解（也为了防止自己日后忘了）所以尽可能仔细的记录其过程。">
@@ -189,7 +189,7 @@
 <p>对单向链表的反转是非常经典的算法题，链表不同于数组，节点的遍历需要每个节点逐个访问下去。理解反转的过程能对线性表的链式存储结构有个充分的认识。为了方便理解（也为了防止自己日后忘了）所以尽可能仔细的记录其过程。</p>
 <a id="more"></a>
 
-<h2><span id="jian-biao">建表</span><a href="#jian-biao" class="header-anchor">#</a></h2><p>首先定义链表结构：</p>
+<h2 id="建表"><a href="#建表" class="headerlink" title="建表"></a>建表</h2><p>首先定义链表结构：</p>
 <figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Node</span></span></span><br><span class="line"><span class="hljs-class">&#123;</span></span><br><span class="line">    <span class="hljs-keyword">int</span> date;</span><br><span class="line">    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Node</span> * <span class="hljs-title">next</span>;</span></span><br><span class="line">&#125; Node;</span><br><span class="line"><span class="hljs-keyword">typedef</span> Node * LinkList;</span><br></pre></td></tr></table></figure>
 
 <p>创建一个链表</p>
@@ -201,7 +201,7 @@
 
 <p>我们得到了一个以L为头指针，包含了五个节点的单向链表</p>
 <p><img src="https://pan.asahih.com/images/2019/10/27/JR6rquzdYW/1.png" alt></p>
-<h2><span id="fan-zhuan">反转</span><a href="#fan-zhuan" class="header-anchor">#</a></h2><h3><span id="die-dai-fa">迭代法</span><a href="#die-dai-fa" class="header-anchor">#</a></h3><p>把这条链表想象成一个字符串，如果让你逆序一个字符串”Hello World”，你会怎么做？除了对半交换外，还有个方法是创建一个新的空间然后逆序存放原字符串的每个字符。</p>
+<h2 id="反转"><a href="#反转" class="headerlink" title="反转"></a>反转</h2><h3 id="迭代法"><a href="#迭代法" class="headerlink" title="迭代法"></a>迭代法</h3><p>把这条链表想象成一个字符串，如果让你逆序一个字符串”Hello World”，你会怎么做？除了对半交换外，还有个方法是创建一个新的空间然后逆序存放原字符串的每个字符。</p>
 <p>我们也是这样，首先创建一个新的头节点 ，就叫它 NewL。让他的后继节点为NULL，是不是有点像头插法建表步骤， 同时新建一个p指针指向L表的第一个节点，也就是<code>p = L -&gt; next</code>。</p>
 <p><img src="https://pan.asahih.com/images/2019/10/27/01nOuMXzGp/2.png" alt></p>
 <p>现在我们可以让 p -&gt; next指向 NewL？</p>
@@ -415,17 +415,17 @@
                 目录
             </h3>
             <ul class="menu-list"><li>
-        <a class="is-flex" href="#undefined">
+        <a class="is-flex" href="#建表">
         <span class="has-mr-6">1</span>
-        <span>建表#</span>
+        <span>建表</span>
         </a></li><li>
-        <a class="is-flex" href="#undefined">
+        <a class="is-flex" href="#反转">
         <span class="has-mr-6">2</span>
-        <span>反转#</span>
+        <span>反转</span>
         </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#undefined">
+        <a class="is-flex" href="#迭代法">
         <span class="has-mr-6">2.1</span>
-        <span>迭代法#</span>
+        <span>迭代法</span>
         </a></li></ul></li></ul>
         </div>
     </div>
