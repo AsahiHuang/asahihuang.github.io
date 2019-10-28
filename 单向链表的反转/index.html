@@ -17,19 +17,19 @@
 <title>单向链表的反转 - Blog-Asahi</title>
 
 
-    <meta name="description" content="对单向链表的反转是非常经典的算法题，链表不同于数组，节点的遍历需要每个节点逐个访问下去。理解反转的过程能对线性表的链式存储结构有个充分的认识。为了方便理解（也为了防止自己日后忘了）所以尽可能仔细的记录其过程。 建表首先定义链表结构： 123456typedef struct Node&amp;#123;    int date;    struct Node * next;&amp;#125; Node;typ">
+    <meta name="description" content="对单向链表的反转是非常经典的算法题，链表不同于数组，节点的遍历需要每个节点逐个访问下去。理解反转的过程能对线性表的链式存储结构有个充分的认识。为了方便理解（也为了防止自己日后忘了）所以尽可能仔细的记录其过程。">
 <meta name="keywords" content="单链表,数据结构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="单向链表的反转">
 <meta property="og:url" content="https://asahihuang.github.io/单向链表的反转/index.html">
 <meta property="og:site_name" content="Blog-Asahi">
-<meta property="og:description" content="对单向链表的反转是非常经典的算法题，链表不同于数组，节点的遍历需要每个节点逐个访问下去。理解反转的过程能对线性表的链式存储结构有个充分的认识。为了方便理解（也为了防止自己日后忘了）所以尽可能仔细的记录其过程。 建表首先定义链表结构： 123456typedef struct Node&amp;#123;    int date;    struct Node * next;&amp;#125; Node;typ">
+<meta property="og:description" content="对单向链表的反转是非常经典的算法题，链表不同于数组，节点的遍历需要每个节点逐个访问下去。理解反转的过程能对线性表的链式存储结构有个充分的认识。为了方便理解（也为了防止自己日后忘了）所以尽可能仔细的记录其过程。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://asahihuang.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-10-28T13:50:03.720Z">
+<meta property="og:updated_time" content="2019-10-28T23:21:20.738Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="单向链表的反转">
-<meta name="twitter:description" content="对单向链表的反转是非常经典的算法题，链表不同于数组，节点的遍历需要每个节点逐个访问下去。理解反转的过程能对线性表的链式存储结构有个充分的认识。为了方便理解（也为了防止自己日后忘了）所以尽可能仔细的记录其过程。 建表首先定义链表结构： 123456typedef struct Node&amp;#123;    int date;    struct Node * next;&amp;#125; Node;typ">
+<meta name="twitter:description" content="对单向链表的反转是非常经典的算法题，链表不同于数组，节点的遍历需要每个节点逐个访问下去。理解反转的过程能对线性表的链式存储结构有个充分的认识。为了方便理解（也为了防止自己日后忘了）所以尽可能仔细的记录其过程。">
 <meta name="twitter:image" content="https://asahihuang.github.io/images/og_image.png">
 
 
@@ -172,7 +172,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    8 分钟 读完 (大约 1228 个字)
+                    8 分钟 读完 (大约 1229 个字)
                 </span>
                 
                 
@@ -187,6 +187,8 @@
         <div class="content">
             <p><img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g80evdkbw7j31hc0u0tas.jpg" alt></p>
 <p>对单向链表的反转是非常经典的算法题，链表不同于数组，节点的遍历需要每个节点逐个访问下去。理解反转的过程能对线性表的链式存储结构有个充分的认识。为了方便理解（也为了防止自己日后忘了）所以尽可能仔细的记录其过程。</p>
+<a id="more"></a>
+
 <h2 id="建表"><a href="#建表" class="headerlink" title="建表"></a>建表</h2><p>首先定义链表结构：</p>
 <figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Node</span></span></span><br><span class="line"><span class="hljs-class">&#123;</span></span><br><span class="line">    <span class="hljs-keyword">int</span> date;</span><br><span class="line">    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Node</span> * <span class="hljs-title">next</span>;</span></span><br><span class="line">&#125; Node;</span><br><span class="line"><span class="hljs-keyword">typedef</span> Node * LinkList;</span><br></pre></td></tr></table></figure>
 
