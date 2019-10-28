@@ -185,7 +185,7 @@
             
         </h1>
         <div class="content">
-            <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>刷leetcode_169 数组tag的时候有道题</p>
+            <h2><span id="qi-yin">起因</span><a href="#qi-yin" class="header-anchor">#</a></h2><p>刷leetcode_169 数组tag的时候有道题</p>
 <blockquote>
 <p>给定一个大小为 <em>n</em> 的数组，找到其中的众数。众数是指在数组中出现次数<strong>大于</strong> <code>⌊ n/2 ⌋</code> 的元素。</p>
 <p>你可以假设数组是非空的，并且给定的数组总是存在众数。</p>
@@ -193,7 +193,7 @@
 <p>一般来讲大概第一反应是暴力算法,出现次数累加看谁超过了总数量的一半即可输出结果…方法可行可惜效率太低,时间复杂度达到O(n^2^),那有没有线性复杂度的解决办法.</p>
 <a id="more"></a>
 
-<h2 id="Boyer-Moore-投票算法"><a href="#Boyer-Moore-投票算法" class="headerlink" title="Boyer-Moore 投票算法"></a>Boyer-Moore 投票算法</h2><p>少数服从多数的<strong>摩尔投票算法</strong>就是其中之一的解决之道</p>
+<h2><span id="boyer-moore-tou-piao-suan-fa">Boyer-Moore 投票算法</span><a href="#boyer-moore-tou-piao-suan-fa" class="header-anchor">#</a></h2><p>少数服从多数的<strong>摩尔投票算法</strong>就是其中之一的解决之道</p>
 <p>这里按照找众数的题来解释算法的实现过程:</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nums:[1,1,2,1,2,2,2,1,2]</span><br></pre></td></tr></table></figure>
 
@@ -206,7 +206,7 @@
 <p>分隔处为count归0时,此时候选众数变为下一位<strong>2</strong>,count值回到1</p>
 <p><strong>显然在这前面这一过程中,随着count值的递增递减到归0我们消耗了相同数量的非众数和众数</strong></p>
 <p>这是我认为投票算法最重要的思想,通过这样的往复,遍历结束后,最终候选众数即为该数组众数</p>
-<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><p>附上用C实现上述例子:</p>
+<h2><span id="dai-ma-shi-xian">代码实现</span><a href="#dai-ma-shi-xian" class="header-anchor">#</a></h2><p>附上用C实现上述例子:</p>
 <figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">majorityElement</span><span class="hljs-params">(<span class="hljs-keyword">int</span>* nums, <span class="hljs-keyword">int</span> numsSize)</span></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">int</span> count = <span class="hljs-number">0</span>,res = nums[<span class="hljs-number">0</span>];</span><br><span class="line">    <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">while</span>(i &lt; numsSize)&#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (!count)</span><br><span class="line">            res = nums[i];</span><br><span class="line">        count += (nums[i] == res ? <span class="hljs-number">1</span>:<span class="hljs-number">-1</span>);</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>AsahiHuang<br>2019.7.5 at 530</p>
@@ -393,17 +393,17 @@
                 目录
             </h3>
             <ul class="menu-list"><li>
-        <a class="is-flex" href="#起因">
+        <a class="is-flex" href="#undefined">
         <span class="has-mr-6">1</span>
-        <span>起因</span>
+        <span>起因#</span>
         </a></li><li>
-        <a class="is-flex" href="#Boyer-Moore-投票算法">
+        <a class="is-flex" href="#undefined">
         <span class="has-mr-6">2</span>
-        <span>Boyer-Moore 投票算法</span>
+        <span>Boyer-Moore 投票算法#</span>
         </a></li><li>
-        <a class="is-flex" href="#代码实现">
+        <a class="is-flex" href="#undefined">
         <span class="has-mr-6">3</span>
-        <span>代码实现</span>
+        <span>代码实现#</span>
         </a></li></ul>
         </div>
     </div>
