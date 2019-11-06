@@ -14,22 +14,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>git常用指令 - Blog-Asahi</title>
+<title>Blog-Asahi</title>
 
 
-    <meta name="description" content="初始配置1234git config --global user.name &amp;quot;username&amp;quot;git config --global user.email &amp;quot;email&amp;quot;--global参数可以保证机器上所有的git仓库使用这个配置  然后输入">
-<meta name="keywords" content="git">
-<meta property="og:type" content="article">
-<meta property="og:title" content="git常用指令">
-<meta property="og:url" content="https://asahihuang.github.io/git 常用指令/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Blog-Asahi">
+<meta property="og:url" content="https://asahihuang.github.io/page/2/index.html">
 <meta property="og:site_name" content="Blog-Asahi">
-<meta property="og:description" content="初始配置1234git config --global user.name &amp;quot;username&amp;quot;git config --global user.email &amp;quot;email&amp;quot;--global参数可以保证机器上所有的git仓库使用这个配置  然后输入">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://asahihuang.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-08-03T12:29:05.865Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git常用指令">
-<meta name="twitter:description" content="初始配置1234git config --global user.name &amp;quot;username&amp;quot;git config --global user.email &amp;quot;email&amp;quot;--global参数可以保证机器上所有的git仓库使用这个配置  然后输入">
+<meta name="twitter:title" content="Blog-Asahi">
 <meta name="twitter:image" content="https://asahihuang.github.io/images/og_image.png">
 
 
@@ -105,7 +100,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="git常用指令" height="28">
+                <img src="/images/logo.png" alt="Blog-Asahi" height="28">
             
             </a>
         </div>
@@ -139,10 +134,6 @@
                     
                 
                 
-                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
-                    <i class="fas fa-list-ul"></i>
-                </a>
-                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -156,20 +147,21 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-9-widescreen has-order-2 column-main"><div class="card">
+                <div class="column is-8-tablet is-8-desktop is-9-widescreen has-order-2 column-main">
+    <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
                 <time class="level-item has-text-grey"
-                    datetime="2019-06-19T07:28:28.000Z">2019-06-19</time>
+                    datetime="2019-06-19T06:49:56.000Z">2019-06-19</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    7 分钟 读完 (大约 991 个字)
+                    4 分钟 读完 (大约 585 个字)
                 </span>
                 
                 
@@ -178,170 +170,63 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-            git常用指令
+            <a class="has-link-black-ter" href="/用 hexo 写博客/">用hexo写博客</a>
             
         </h1>
         <div class="content">
-            <h2 id="初始配置"><a href="#初始配置" class="headerlink" title="初始配置"></a>初始配置</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;</span><br><span class="line">git config --global user.email &quot;email&quot;</span><br><span class="line"></span><br><span class="line">--global参数可以保证机器上所有的git仓库使用这个配置</span><br></pre></td></tr></table></figure>
+            <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure>
 
-<p>然后输入</p>
-<a id="more"></a>
-
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
-
-<h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><p>   查看分支：git branch<br>   创建分支：git branch name<br>   切换分支：git checkout name</p>
-<p>   创建+切换分支：git checkout –b name<br>   合并某分支到当前分支：git merge name<br>   删除分支：git branch –d name</p>
-<h2 id="远程仓库-github"><a href="#远程仓库-github" class="headerlink" title="远程仓库(github)"></a>远程仓库(github)</h2><ol>
-<li><p>创建ssh key</p>
-</li>
-<li><p>github上add ssh key</p>
-</li>
-<li><p>github上创建新的仓库</p>
-</li>
-<li><p>根据GitHub仓库链接 </p>
- <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/AsahiHuang/Data_Structure.git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>将本地仓库推送到远程仓库 ,git push,实际将当前分支推送到远程</p>
-<blockquote>
-<p>由于远程库是空的，我们第一次推送master分支时，加上了 –u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。</p>
-</blockquote>
-</li>
-<li><p>现在,只要本地作提交,可通过</p>
- <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-
-<p> 把本地master分支的最新修改推送到GitHub</p>
-</li>
-</ol>
-<h2 id="文件修改回退"><a href="#文件修改回退" class="headerlink" title="文件修改回退"></a>文件修改回退</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset  –hard HEAD~100</span><br></pre></td></tr></table></figure>
-
-<p>指向上次修改的指针</p>
-<p>或者</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout  -- filename</span><br></pre></td></tr></table></figure>
-
-<p>把filename文件在工作区的修改全部撤销</p>
-<blockquote>
-<p>这里有两种情况</p>
-<ol>
-<li>文件自动修改后，还没有放到暂存区，使用 撤销修改就回到和版本库一模一样的状态。</li>
-<li>另外一种是文件已经放入暂存区了，接着又作了修改，撤销修改就回到添加暂存区后的状态。</li>
-</ol>
-</blockquote>
-<p>再没有commit前,通过此命令也可将删除的文件(rm filename)恢复</p>
-<h2 id="远程仓库克隆"><a href="#远程仓库克隆" class="headerlink" title="远程仓库克隆"></a>远程仓库克隆</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 远程仓库地址</span><br></pre></td></tr></table></figure>
-
-<p>即可在本地生成一个版本库</p>
-<h2 id="分支策略"><a href="#分支策略" class="headerlink" title="分支策略"></a>分支策略</h2><p>​    常合并分支时，git一般使用”Fast forward”模式，在这种模式下，删除分支后，会丢掉分支信息，现在我们来使用带参数 –no-ff来禁用”Fast forward”模式</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge –-no-ff  -m &quot;注释&quot; 合并分支</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>分支策略：首先master主分支应该是非常稳定的，也就是用来发布新版本，一般情况下不允许在上面干活，干活一般情况下在新建的dev分支上干活，干完后，比如上要发布，或者说dev分支代码稳定后可以合并到主分支master上来。</p>
-</blockquote>
-<h2 id="bug分支"><a href="#bug分支" class="headerlink" title="bug分支"></a>bug分支</h2><p>​    在开发中，会经常碰到bug问题，那么有了bug就需要修复，在Git中，分支是很强大的，每个bug都可以通过一个临时分支来修复，修复完成后，合并分支，然后将临时的分支删除掉。<br>比如我在开发中接到一个404 bug时候，我们可以创建一个404分支来修复它，但是当前的dev分支上的工作到一半还没有提交,此时无法切换分支.</p>
-<p>​    Git提供了<strong>stash</strong> 功能,可以把当前的工作现场隐藏,等恢复现场后继续工作</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash</span><br></pre></td></tr></table></figure>
-
-<p>此时工作区的状态时干净的</p>
-<p>切换回主分支,新建一个临时分支,修复完成后,回到主分支并合并,删除临时分支</p>
-<p>现在回到dev分支</p>
-<p>此时工作区时干净的,可通过</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash list</span><br></pre></td></tr></table></figure>
-
-<p>查看,</p>
-<p>Git把stash内容存在某个地方了，但是需要恢复一下,两种办法:</p>
-<ol>
-<li>git stash apply恢复，恢复后，stash内容并不删除，你需要使用命令git stash drop来删除</li>
-<li>另一种方式是使用git stash pop,恢复的同时把stash内容也删除了。</li>
-</ol>
-<h2 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h2><ol>
-<li><p>查看日志</p>
- <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure>
-
-
-
-</li>
-</ol>
-<ol start="2">
-<li><p>修改日志</p>
-<p> 最近一次commit的修改:</p>
- <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit --amend</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-
+<p>在git bush中安装hexo</p>
         </div>
         
+        
         <hr style="height:1px;margin:1rem 0" />
-        <div class="level is-size-7 is-uppercase">
+        <div class="level is-mobile is-flex">
+            <div class="level-start">
+                
+                <div class="level-item is-size-7 is-uppercase">
+                    <i class="fas fa-tags has-text-grey"></i>&nbsp;
+                    <a class="has-link-grey -link" href="/tags/hexo/">hexo</a>
+                </div>
+                
+            </div>
             <div class="level-start">
                 <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/git/">git</a>
+                    <a class="button is-size-7 is-light"
+                        href="/用 hexo 写博客/#more">阅读更多</a>
                 </div>
             </div>
         </div>
         
         
-        
     </div>
 </div>
 
 
 
-<div class="card">
-    <div class="card-content">
-        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
-        <div class="buttons is-centered">
-            
-        </div>
-    </div>
-</div>
 
 
 
+
+
+
+    
 <div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev"
-                href="/eva2020/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">eva2020</span>
-            </a>
+    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+        <div class="pagination-previous">
+            <a class="is-flex-grow has-text-black-ter" href="/">上一页</a>
         </div>
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next"
-                href="/用 hexo 写博客/">
-                <span class="level-item">用hexo写博客</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
+        <div class="pagination-next is-invisible is-hidden-mobile">
+            <a class="is-flex-grow has-text-black-ter" href="/page/3/">下一页</a>
         </div>
-        
-    </div>
-</div>
-
-
-
-<div class="card">
-    <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">评论</h3>
-        
-<div id="valine-thread" class="content"></div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-<script>
-    new Valine({
-        el: '#valine-thread' ,
-        notify: false,
-        verify: false,
-        app_id: 'WHvLmCbhgd0Sb6TzRj09vl7u-gzGzoHsz',
-        app_key: 'OFWpYkGVAiEvcL488yYTESL9',
-        placeholder: '⁄(⁄ ⁄ ⁄ω⁄ ⁄ ⁄)⁄'
-    });
-</script>
-
-    </div>
+        <ul class="pagination-list is-hidden-mobile">
+            
+            <li><a class="pagination-link has-text-black-ter" href="/">1</a></li>
+            
+            <li><a class="pagination-link is-current" href="/page/2/">2</a></li>
+            
+        </ul>
+    </nav>
 </div>
 </div>
                 
@@ -446,46 +331,83 @@
 </div>
     
         
-<div class="card widget column-left is-sticky" id="toc">
+    
+        
+
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            链接
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://pan.asahih.com" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Pan.AsahiH</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">pan.asahih.com</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://www.edensakura.com:16888/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">EDEN的小窝</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">www.edensakura.com</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+
+    
+        
+<div class="card widget">
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                目录
+                分类
             </h3>
-            <ul class="menu-list"><li>
-        <a class="is-flex" href="#初始配置">
-        <span class="has-mr-6">1</span>
-        <span>初始配置</span>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/categories/生活/">
+            <span class="level-start">
+                <span class="level-item">生活</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
         </a></li><li>
-        <a class="is-flex" href="#分支">
-        <span class="has-mr-6">2</span>
-        <span>分支</span>
-        </a></li><li>
-        <a class="is-flex" href="#远程仓库-github">
-        <span class="has-mr-6">3</span>
-        <span>远程仓库(github)</span>
-        </a></li><li>
-        <a class="is-flex" href="#文件修改回退">
-        <span class="has-mr-6">4</span>
-        <span>文件修改回退</span>
-        </a></li><li>
-        <a class="is-flex" href="#远程仓库克隆">
-        <span class="has-mr-6">5</span>
-        <span>远程仓库克隆</span>
-        </a></li><li>
-        <a class="is-flex" href="#分支策略">
-        <span class="has-mr-6">6</span>
-        <span>分支策略</span>
-        </a></li><li>
-        <a class="is-flex" href="#bug分支">
-        <span class="has-mr-6">7</span>
-        <span>bug分支</span>
-        </a></li><li>
-        <a class="is-flex" href="#历史">
-        <span class="has-mr-6">8</span>
-        <span>历史</span>
-        </a></li></ul>
+        <a class="level is-marginless" href="/categories/笔记/">
+            <span class="level-start">
+                <span class="level-item">笔记</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">4</span>
+            </span>
+        </a></li>
+            </ul>
         </div>
+    </div>
+</div>
+    
+        
+ <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            标签云
+        </h3>
+        <a href="/tags/ACG/" style="font-size: 20px;">ACG</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/oneindex/" style="font-size: 10px;">oneindex</a> <a href="/tags/单链表/" style="font-size: 20px;">单链表</a> <a href="/tags/数据结构/" style="font-size: 20px;">数据结构</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/随笔/" style="font-size: 20px;">随笔</a> <a href="/tags/黑苹果/" style="font-size: 10px;">黑苹果</a>
     </div>
 </div>
 
@@ -514,7 +436,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="git常用指令" height="28">
+                    <img src="/images/logo.png" alt="Blog-Asahi" height="28">
                 
                 </a>
                 <p class="is-size-7">
