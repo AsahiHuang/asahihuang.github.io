@@ -26,7 +26,7 @@
 <meta property="og:description" content="对单向链表的反转是非常经典的算法题，链表不同于数组，节点的遍历需要每个节点逐个访问下去。理解反转的过程能对线性表的链式存储结构有个充分的认识。为了方便理解（也为了防止自己日后忘了）所以尽可能仔细的记录其过程。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://asahihuang.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-11-07T13:52:57.493Z">
+<meta property="og:updated_time" content="2019-11-07T14:31:40.214Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="单向链表的反转">
 <meta name="twitter:description" content="对单向链表的反转是非常经典的算法题，链表不同于数组，节点的遍历需要每个节点逐个访问下去。理解反转的过程能对线性表的链式存储结构有个充分的认识。为了方便理解（也为了防止自己日后忘了）所以尽可能仔细的记录其过程。">
@@ -173,7 +173,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    8 分钟 读完 (大约 1223 个字)
+                    8 分钟 读完 (大约 1224 个字)
                 </span>
                 
                 
@@ -214,7 +214,7 @@
 </ol>
 <figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">temp = p -&gt; next;	<span class="hljs-comment">//让temp存放p后驱节点</span></span><br><span class="line">p - &gt; next = NewL -&gt; next;	<span class="hljs-comment">//让p指向当前新表的后继</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="https://files.catbox.moe/qdvdhc.png" alt></p>
+<p><img src="https://files.catbox.moe/gib4mt.png" alt></p>
 <p>我们完成了一个节点的插入到新表，接下来我们要准备后续节点。首先我们让 NewL -&gt; next = p 从而使接下来的节点始终插入在新表头指针后面，如果你了解头插法你就会发现这一过程极其相似，为了实现逆序我们就是以原来的L表用头插法来创建一个新表，头插法本身就是逆置建表，让p回到temp后进入下次循环，新节点会不断的插入在表头后，直到L表结束。</p>
 <figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">//头插法部分：</span></span><br><span class="line">...</span><br><span class="line">        p -&gt; next = L -&gt;next;	<span class="hljs-comment">//头插入中我们让新节点的后继指向头节点的后继</span></span><br><span class="line">        L-&gt;next = p			   <span class="hljs-comment">//然后让头节点的后继变成新节点从而在中间不断插入</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
 
