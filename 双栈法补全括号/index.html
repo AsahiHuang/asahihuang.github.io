@@ -14,22 +14,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>eva2020 - Blog-Asahi</title>
+<title>双栈法补全括号 - Blog-Asahi</title>
 
 
-    <meta name="description" content="EVA 2020新剧场版 0706特别活动">
-<meta name="keywords" content="ACG">
+    <meta name="description" content="前言正好昨天是双十一,不知道大家都买了些什么.今年应我们老师的要求,十二期免息入手了一台卡西欧计算器…因为自己高中那台屏幕漏液了这次干脆就破费买了台功能多的.">
+<meta name="keywords" content="数据结构,栈">
 <meta property="og:type" content="article">
-<meta property="og:title" content="eva2020">
-<meta property="og:url" content="https://asahihuang.github.io/eva2020/index.html">
+<meta property="og:title" content="双栈法补全括号">
+<meta property="og:url" content="https://asahihuang.github.io/双栈法补全括号/index.html">
 <meta property="og:site_name" content="Blog-Asahi">
-<meta property="og:description" content="EVA 2020新剧场版 0706特别活动">
+<meta property="og:description" content="前言正好昨天是双十一,不知道大家都买了些什么.今年应我们老师的要求,十二期免息入手了一台卡西欧计算器…因为自己高中那台屏幕漏液了这次干脆就破费买了台功能多的.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://asahihuang.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-08-04T01:06:09.091Z">
+<meta property="og:updated_time" content="2019-11-13T14:03:53.183Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="eva2020">
-<meta name="twitter:description" content="EVA 2020新剧场版 0706特别活动">
+<meta name="twitter:title" content="双栈法补全括号">
+<meta name="twitter:description" content="前言正好昨天是双十一,不知道大家都买了些什么.今年应我们老师的要求,十二期免息入手了一台卡西欧计算器…因为自己高中那台屏幕漏液了这次干脆就破费买了台功能多的.">
 <meta name="twitter:image" content="https://asahihuang.github.io/images/og_image.png">
 
 
@@ -105,7 +105,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="eva2020" height="28">
+                <img src="/images/logo.png" alt="双栈法补全括号" height="28">
             
             </a>
         </div>
@@ -163,13 +163,17 @@
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
                 <time class="level-item has-text-grey"
-                    datetime="2019-06-28T02:31:19.000Z">2019-06-28</time>
+                    datetime="2019-11-13T13:58:07.000Z">2019-11-13</time>
+                
+                <div class="level-item">
+                    <a class="has-link-grey -link" href="/categories/笔记/">笔记</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 48 个字)
+                    9 分钟 读完 (大约 1407 个字)
                 </span>
                 
                 
@@ -178,16 +182,73 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-            eva2020
+            双栈法补全括号
             
         </h1>
         <div class="content">
-            <h1 id="EVA-2020新剧场版-0706特别活动"><a href="#EVA-2020新剧场版-0706特别活动" class="headerlink" title="EVA 2020新剧场版 0706特别活动"></a>EVA 2020新剧场版 0706特别活动</h1><img src="/eva2020/eva.png">
-
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>正好昨天是双十一,不知道大家都买了些什么.今年应我们老师的要求,十二期免息入手了一台卡西欧计算器…因为自己高中那台屏幕漏液了这次干脆就破费买了台功能多的.</p>
 <a id="more"></a>
 
-<p>EVA 2020年新剧场版 AVANT1 0706版将在2019.7.6首发</p>
-<p><em>有意思的是,这一时间点正好与飞跃巅峰的结尾0706呼应</em></p>
+<p>第一次用卡西欧是在初中时候.之前接触的都是大家日常使用的那种普通计算器.可能还有”一 加 四 等于 五”还带喇叭,用上卡西欧后,就像发现了新大陆.因为它支持带括号计算了,题目上再多括号的嵌套只要正确它都能输入计算出结果.甚至支持带分式的处理得到结果也是分式.所以当年甚是好奇到底是怎么实现的其实用栈来处理就相当容易了</p>
+<h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2><p>栈(stack)是一种遵循后进先出原则的数据结构.表尾是栈顶,表头则是栈底,其进栈(push)和出栈(pop)的操作都是在栈顶进行.我们在浏览网页时页面不停地跳转时,其中点击回退按钮后能够返回到上一页面的实现就是用到了栈的原理,计算机不停的将你当前浏览过的页面压入栈,在执行后退时在不停地弹出,这一顺序正好和你浏览过程相反.</p>
+<p><img src="https://files.catbox.moe/fthubu.png" alt></p>
+<p>这里不详细介绍栈的具体结构及实现方法,主要介绍双栈法</p>
+<h2 id="计算四则表达式"><a href="#计算四则表达式" class="headerlink" title="计算四则表达式"></a>计算四则表达式</h2><p>E.W.Dijkstra发明了一个算法,通过两个栈来实现一个带括号的算术表达式求值.</p>
+<p>规定表达式是由括号,运算符,数字构成的字符串,其中运算符也只考虑四种基本的+,-,*,/.</p>
+<p>创建两个栈,一个数字栈(vals),一个符号栈(ops),分别用来存放数字和符号</p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">stack&lt;Double&gt; vals = <span class="hljs-keyword">new</span> stack&lt;&gt;();</span><br><span class="line">stack&lt;String&gt; ops = <span class="hljs-keyword">new</span> stack&lt;&gt;();</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>遇到数字进数字栈</li>
+<li>遇到运算符进符号栈</li>
+<li>遇到左括号忽略</li>
+<li>遇到右括号,分别在数字栈弹出两个数字,符号栈弹出一个符号进行计算,再将结果压入数字栈</li>
+</ul>
+<p>最终数字栈只会留下最后一个值,就是该表达式的值,更加通用的处理方式还有将中序表达式转换成后序之后进行计算,这里不再展开.</p>
+<h2 id="补齐括号"><a href="#补齐括号" class="headerlink" title="补齐括号"></a>补齐括号</h2><p>题目来自算法第四版的练习1.3.9,原题:</p>
+<blockquote>
+<p>编写一段程序,从标准输入得到一个缺少左括号的表达式并打印出补全括号之后的中序表达式.</p>
+<p>例如:给定输入:</p>
+<p><code>1+2)*3-4)*5-6)))</code></p>
+<p>你的程序应该输出:</p>
+<p><code>((1+2))*((3-4)*(5-6))</code></p>
+</blockquote>
+<p>这个问题同样可以通过双栈法解决</p>
+<p>和双栈法计算四则表达式一样,我们创建两个栈,分别存储数字和符号,不过现在我们不需要求值,而是直接输出补齐括号的表达式,所以我们数字栈也就改成存储字符串型</p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Stack&lt;String&gt; vals = <span class="hljs-keyword">new</span> Stack&lt;&gt;();</span><br><span class="line">Stack&lt;String&gt; opts = <span class="hljs-keyword">new</span> Stack&lt;&gt;();</span><br></pre></td></tr></table></figure>
+
+<p>我们这样规定</p>
+<ul>
+<li>如果遇到符号,如”+,-,*,/“,压进符号栈 opts ,如果遇到数字,压进数字栈 vals</li>
+<li>如果遇到”)”,分别弹出两位数字栈 vals 和一位符号栈 opts 进行拼接,然后将拼接后的字符串压回数字栈 vals</li>
+</ul>
+<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><p>我们拿题目样例来演示这个过程<code>1+2)*3-4)*5-6)))</code></p>
+<p><img src="https://files.catbox.moe/kcqcva.png" alt></p>
+<p>前面3位的进栈没什么问题,接下来我们碰到了第一个”)”,按照我们的规则我们弹出数字栈的前两位以及符号栈的前一位进行一个拼接,红色部分就是栈中元素,同时在两端分别加上括号,形成一个新的字符串</p>
+<p><img src="https://files.catbox.moe/niqofp.png" alt></p>
+<p>同时我们将新的字符串压入到数字栈中</p>
+<p><img src="https://files.catbox.moe/vp4cmw.png" alt></p>
+<p>这部分对应代码,注意根据栈的后进先出原则,这里的先弹出<code>n1</code>是原表达式符号后的数字:</p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">String n1 = vals.pop();</span><br><span class="line">String n2 = vals.pop();</span><br><span class="line">String opt = opts.pop();</span><br><span class="line">String data = <span class="hljs-string">"("</span> + n2 + opt + n1 + <span class="hljs-string">")"</span>;</span><br><span class="line">vals.push(data)</span><br></pre></td></tr></table></figure>
+
+<p>接下来程序继续走,走到了第二个待补全的右括号</p>
+<p><img src="https://files.catbox.moe/vw1j85.png" alt></p>
+<p>进行和刚才一样的操作,拼接出一个新的字符串并压入数字栈</p>
+<p><img src="https://files.catbox.moe/gtgkmk.png" alt></p>
+<p>继续走,走到第三个待补全的右括号,此时后面全是右括号了,</p>
+<p><img src="https://files.catbox.moe/bptf1s.png" alt></p>
+<p>相同处理后,现在的数字的栈元素都变成了带括号的字符串,后面的处理也是相同的,将它们看作一个数字与操作符做拼接</p>
+<p><img src="https://files.catbox.moe/rcuzjj.png" alt></p>
+<p>进行倒数第二次拼接,并压入数字栈</p>
+<p><img src="https://files.catbox.moe/id7v1o.png" alt></p>
+<p>最后一个右括号我们把数字栈中剩下的两个字符串和符号栈中的最后一个符号做拼接,得到了补全了左括号后的完整表达式,现在只要弹出结果就行了</p>
+<p><img src="https://files.catbox.moe/f8jrbk.png" alt></p>
+<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>这里用的是 Java,主函数输出输出用的是算法四的函数</p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> edu.princeton.cs.algs4.*;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ex139</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">completeParentese</span><span class="hljs-params">(String in)</span></span>&#123;</span><br><span class="line">        Stack&lt;String&gt; vals = <span class="hljs-keyword">new</span> Stack&lt;&gt;();</span><br><span class="line">        Stack&lt;String&gt; opts = <span class="hljs-keyword">new</span> Stack&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="hljs-keyword">char</span>[] s = in.toCharArray();</span><br><span class="line">        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">char</span> ch : s)&#123;</span><br><span class="line">            <span class="hljs-keyword">if</span> (ch == <span class="hljs-string">'*'</span> || ch == <span class="hljs-string">'/'</span> || ch == <span class="hljs-string">'+'</span> || ch == <span class="hljs-string">'-'</span>)&#123;</span><br><span class="line">                opts.push(String.valueOf(ch));</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (ch == <span class="hljs-string">')'</span>)&#123;</span><br><span class="line">                String n1 = vals.pop();</span><br><span class="line">                String n2 = vals.pop();</span><br><span class="line">                String opt = opts.pop();</span><br><span class="line">                String data = <span class="hljs-string">"("</span> + n2 + opt + n1 + <span class="hljs-string">")"</span>;</span><br><span class="line">                vals.push(data);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="hljs-keyword">else</span> </span><br><span class="line">                vals.push(String.valueOf(ch));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">return</span> vals.pop();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String st = StdIn.readString();</span><br><span class="line">        System.out.println(completeParentese(st));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>AsahiHuang<br>2019.11.12</p>
 
         </div>
         
@@ -196,7 +257,7 @@
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/ACG/">ACG</a>
+                    <a class="has-link-grey -link" href="/tags/数据结构/">数据结构</a>,&nbsp;<a class="has-link-grey -link" href="/tags/栈/">栈</a>
                 </div>
             </div>
         </div>
@@ -222,19 +283,11 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev"
-                href="/摩尔投票算法/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">摩尔投票算法</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
             <a class="level level-item has-link-grey  article-nav-next"
-                href="/git 常用指令/">
-                <span class="level-item">git常用指令</span>
+                href="/难受的一天/">
+                <span class="level-item">难受的一天</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -374,9 +427,29 @@
                 目录
             </h3>
             <ul class="menu-list"><li>
-        <a class="is-flex" href="#EVA-2020新剧场版-0706特别活动">
+        <a class="is-flex" href="#前言">
         <span class="has-mr-6">1</span>
-        <span>EVA 2020新剧场版 0706特别活动</span>
+        <span>前言</span>
+        </a></li><li>
+        <a class="is-flex" href="#栈">
+        <span class="has-mr-6">2</span>
+        <span>栈</span>
+        </a></li><li>
+        <a class="is-flex" href="#计算四则表达式">
+        <span class="has-mr-6">3</span>
+        <span>计算四则表达式</span>
+        </a></li><li>
+        <a class="is-flex" href="#补齐括号">
+        <span class="has-mr-6">4</span>
+        <span>补齐括号</span>
+        </a></li><li>
+        <a class="is-flex" href="#过程">
+        <span class="has-mr-6">5</span>
+        <span>过程</span>
+        </a></li><li>
+        <a class="is-flex" href="#实现">
+        <span class="has-mr-6">6</span>
+        <span>实现</span>
         </a></li></ul>
         </div>
     </div>
@@ -407,7 +480,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="eva2020" height="28">
+                    <img src="/images/logo.png" alt="双栈法补全括号" height="28">
                 
                 </a>
                 <p class="is-size-7">
