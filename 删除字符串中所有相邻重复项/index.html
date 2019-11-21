@@ -14,17 +14,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>标签: git - Blog-Asahi</title>
+<title>删除字符串中所有相邻重复项 - Blog-Asahi</title>
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Blog-Asahi">
-<meta property="og:url" content="https://asahihuang.github.io/tags/git/index.html">
+    <meta name="description" content="题目leetcode_1047  题目描述:给出由小写字母组成的字符串 S，重复项删除操作会选择两个相邻且相同的字母，并删除它们。在 S 上反复执行重复项删除操作，直到无法继续删除。在完成所有重复项删除操作后返回最终的字符串。答案保证唯一。 示例：输入：”abbaca”输出：”ca”解释：例如，在 “abbaca” 中，我们可以删除 “bb” 由于两字母相邻且相同，这是此时唯一可以执行删除操作的重">
+<meta name="keywords" content="栈,数据结构,leetcode">
+<meta property="og:type" content="article">
+<meta property="og:title" content="删除字符串中所有相邻重复项">
+<meta property="og:url" content="https://asahihuang.github.io/删除字符串中所有相邻重复项/index.html">
 <meta property="og:site_name" content="Blog-Asahi">
+<meta property="og:description" content="题目leetcode_1047  题目描述:给出由小写字母组成的字符串 S，重复项删除操作会选择两个相邻且相同的字母，并删除它们。在 S 上反复执行重复项删除操作，直到无法继续删除。在完成所有重复项删除操作后返回最终的字符串。答案保证唯一。 示例：输入：”abbaca”输出：”ca”解释：例如，在 “abbaca” 中，我们可以删除 “bb” 由于两字母相邻且相同，这是此时唯一可以执行删除操作的重">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://asahihuang.github.io/images/og_image.png">
+<meta property="og:updated_time" content="2019-11-21T13:49:34.995Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Blog-Asahi">
+<meta name="twitter:title" content="删除字符串中所有相邻重复项">
+<meta name="twitter:description" content="题目leetcode_1047  题目描述:给出由小写字母组成的字符串 S，重复项删除操作会选择两个相邻且相同的字母，并删除它们。在 S 上反复执行重复项删除操作，直到无法继续删除。在完成所有重复项删除操作后返回最终的字符串。答案保证唯一。 示例：输入：”abbaca”输出：”ca”解释：例如，在 “abbaca” 中，我们可以删除 “bb” 由于两字母相邻且相同，这是此时唯一可以执行删除操作的重">
 <meta name="twitter:image" content="https://asahihuang.github.io/images/og_image.png">
 
 
@@ -100,7 +105,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="Blog-Asahi" height="28">
+                <img src="/images/logo.png" alt="删除字符串中所有相邻重复项" height="28">
             
             </a>
         </div>
@@ -134,6 +139,10 @@
                     
                 
                 
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -148,30 +157,23 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-9-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">git</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
                 <time class="level-item has-text-grey"
-                    datetime="2019-06-19T07:28:28.000Z">2019-06-19</time>
+                    datetime="2019-11-21T13:40:02.000Z">2019-11-21</time>
+                
+                <div class="level-item">
+                    <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    7 分钟 读完 (大约 991 个字)
+                    3 分钟 读完 (大约 500 个字)
                 </span>
                 
                 
@@ -180,33 +182,44 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-            <a class="has-link-black-ter" href="/git 常用指令/">git常用指令</a>
+            删除字符串中所有相邻重复项
             
         </h1>
         <div class="content">
-            <h2 id="初始配置"><a href="#初始配置" class="headerlink" title="初始配置"></a>初始配置</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;username&quot;</span><br><span class="line">git config --global user.email &quot;email&quot;</span><br><span class="line"></span><br><span class="line">--global参数可以保证机器上所有的git仓库使用这个配置</span><br></pre></td></tr></table></figure>
+            <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p><a href="https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string/" target="_blank" rel="noopener">leetcode_1047</a></p>
+<blockquote>
+<p>题目描述:<br>给出由小写字母组成的字符串 S，重复项删除操作会选择两个相邻且相同的字母，并删除它们。<br>在 S 上反复执行重复项删除操作，直到无法继续删除。<br>在完成所有重复项删除操作后返回最终的字符串。答案保证唯一。</p>
+<p>示例：<br>输入：”abbaca”<br>输出：”ca”<br>解释：<br>例如，在 “abbaca” 中，我们可以删除 “bb” 由于两字母相邻且相同，这是此时唯一可以执行删除操作的重复项。之后我们得到字符串 “aaca”，其中又只有 “aa” 可以执行重复项删除操作，所以最后的字符串为 “ca”</p>
+</blockquote>
+<a id="more"></a>
 
-<p>然后输入</p>
+<h2 id="初步思路"><a href="#初步思路" class="headerlink" title="初步思路"></a>初步思路</h2><ul>
+<li>将字符串转换成字符数组,创建一个 Stack 和一个空的字符串作为输出</li>
+<li>判断传入字符串为空或只有一个字符时直接返回</li>
+<li>将第一个字符入栈</li>
+<li>从 i = 1 开始遍历,当栈不为空时,出栈一个字符和 a[i] 比较,如果相等为抵消不处理,如果不相等依次讲弹出的值和a[i]入栈</li>
+<li>遍历栈,出栈剩余字符到 rs ,每个字符添加在 rs 之前并返回</li>
+</ul>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">removeDuplicates</span><span class="hljs-params">(String S)</span> </span>&#123;</span><br><span class="line">        Stack&lt;Character&gt; stack = <span class="hljs-keyword">new</span> Stack&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="hljs-keyword">char</span>[] a = S.toCharArray();</span><br><span class="line">        String rs = <span class="hljs-string">""</span>;</span><br><span class="line">        <span class="hljs-keyword">if</span>(a.length &lt;= <span class="hljs-number">1</span>)</span><br><span class="line">            <span class="hljs-keyword">return</span> rs + a[<span class="hljs-number">0</span>];</span><br><span class="line">        stack.push(a[<span class="hljs-number">0</span>]);</span><br><span class="line">        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; a.length;i++)&#123;</span><br><span class="line">            <span class="hljs-keyword">if</span> (!stack.empty())&#123;</span><br><span class="line">                <span class="hljs-keyword">char</span> ch = stack.pop();</span><br><span class="line">                <span class="hljs-keyword">if</span> (ch != a[i])&#123;</span><br><span class="line">                    stack.push(ch);</span><br><span class="line">                    stack.push(a[i]);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="hljs-keyword">else</span> </span><br><span class="line">                stack.push(a[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">while</span>(!stack.empty())&#123;</span><br><span class="line">            rs = stack.pop() + rs;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">return</span> rs;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="官方解答"><a href="#官方解答" class="headerlink" title="官方解答"></a>官方解答</h2><p>官方解法并没有直接创建一个 Stack 而是模仿栈的功能处理 StringBuilder </p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">removeDuplicates</span><span class="hljs-params">(String S)</span> </span>&#123;</span><br><span class="line">        StringBuilder sb = <span class="hljs-keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="hljs-keyword">int</span> sbLength = <span class="hljs-number">0</span>;</span><br><span class="line">        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">char</span> character : S.toCharArray()) &#123;</span><br><span class="line">            <span class="hljs-keyword">if</span> (sbLength != <span class="hljs-number">0</span> &amp;&amp; character == sb.charAt(sbLength - <span class="hljs-number">1</span>))</span><br><span class="line">                sb.deleteCharAt(sbLength-- - <span class="hljs-number">1</span>);	<span class="hljs-comment">//先删除末尾元素，再长度减一</span></span><br><span class="line">            <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">                sb.append(character);</span><br><span class="line">                sbLength++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">return</span> sb.toString();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>果然还是差的太远了…  </p>
+<p>2019.11.21<br>AsahiHuang</p>
+
         </div>
-        
         
         <hr style="height:1px;margin:1rem 0" />
-        <div class="level is-mobile is-flex">
-            <div class="level-start">
-                
-                <div class="level-item is-size-7 is-uppercase">
-                    <i class="fas fa-tags has-text-grey"></i>&nbsp;
-                    <a class="has-link-grey -link" href="/tags/git/">git</a>
-                </div>
-                
-            </div>
+        <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
-                    <a class="button is-size-7 is-light"
-                        href="/git 常用指令/#more">阅读更多</a>
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/leetcode/">leetcode</a>,&nbsp;<a class="has-link-grey -link" href="/tags/数据结构/">数据结构</a>,&nbsp;<a class="has-link-grey -link" href="/tags/栈/">栈</a>
                 </div>
             </div>
         </div>
+        
         
         
     </div>
@@ -214,11 +227,54 @@
 
 
 
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+        </div>
+    </div>
+</div>
 
 
 
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next"
+                href="/双栈法补全括号/">
+                <span class="level-item">双栈法补全括号</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: 'WHvLmCbhgd0Sb6TzRj09vl7u-gzGzoHsz',
+        app_key: 'OFWpYkGVAiEvcL488yYTESL9',
+        placeholder: '⁄(⁄ ⁄ ⁄ω⁄ ⁄ ⁄)⁄'
+    });
+</script>
+
+    </div>
+</div>
 </div>
                 
 
@@ -322,102 +378,26 @@
 </div>
     
         
-    
-        
-
-<div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-        <h3 class="menu-label">
-            链接
-        </h3>
-        <ul class="menu-list">
-        
-            <li>
-                <a class="level is-mobile" href="https://t.me/DressingChannel" target="_blank">
-                    <span class="level-left">
-                        <span class="level-item">Telegram频道</span>
-                    </span>
-                    <span class="level-right">
-                        <span class="level-item tag">t.me</span>
-                    </span>
-                </a>
-            </li>
-        
-            <li>
-                <a class="level is-mobile" href="https://pan.asahih.com" target="_blank">
-                    <span class="level-left">
-                        <span class="level-item">Pan.AsahiH</span>
-                    </span>
-                    <span class="level-right">
-                        <span class="level-item tag">pan.asahih.com</span>
-                    </span>
-                </a>
-            </li>
-        
-            <li>
-                <a class="level is-mobile" href="https://www.edensakura.com:16888" target="_blank">
-                    <span class="level-left">
-                        <span class="level-item">EDEN小窝</span>
-                    </span>
-                    <span class="level-right">
-                        <span class="level-item tag">www.edensakura.com</span>
-                    </span>
-                </a>
-            </li>
-        
-        </ul>
-        </div>
-    </div>
-</div>
-
-
-    
-        
-<div class="card widget">
+<div class="card widget column-left is-sticky" id="toc">
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                分类
+                目录
             </h3>
-            <ul class="menu-list">
-            <li>
-        <a class="level is-marginless" href="/categories/leetcode/">
-            <span class="level-start">
-                <span class="level-item">leetcode</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#题目">
+        <span class="has-mr-6">1</span>
+        <span>题目</span>
         </a></li><li>
-        <a class="level is-marginless" href="/categories/生活/">
-            <span class="level-start">
-                <span class="level-item">生活</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">2</span>
-            </span>
+        <a class="is-flex" href="#初步思路">
+        <span class="has-mr-6">2</span>
+        <span>初步思路</span>
         </a></li><li>
-        <a class="level is-marginless" href="/categories/笔记/">
-            <span class="level-start">
-                <span class="level-item">笔记</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">5</span>
-            </span>
-        </a></li>
-            </ul>
+        <a class="is-flex" href="#官方解答">
+        <span class="has-mr-6">3</span>
+        <span>官方解答</span>
+        </a></li></ul>
         </div>
-    </div>
-</div>
-    
-        
- <div class="card widget">
-    <div class="card-content">
-        <h3 class="menu-label">
-            标签云
-        </h3>
-        <a href="/tags/ACG/" style="font-size: 15px;">ACG</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/leetcode/" style="font-size: 10px;">leetcode</a> <a href="/tags/oneindex/" style="font-size: 10px;">oneindex</a> <a href="/tags/单链表/" style="font-size: 15px;">单链表</a> <a href="/tags/数据结构/" style="font-size: 20px;">数据结构</a> <a href="/tags/栈/" style="font-size: 15px;">栈</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/随笔/" style="font-size: 15px;">随笔</a> <a href="/tags/黑苹果/" style="font-size: 10px;">黑苹果</a>
     </div>
 </div>
 
@@ -446,7 +426,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="Blog-Asahi" height="28">
+                    <img src="/images/logo.png" alt="删除字符串中所有相邻重复项" height="28">
                 
                 </a>
                 <p class="is-size-7">
