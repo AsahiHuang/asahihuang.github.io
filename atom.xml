@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://asahihuang.github.io/"/>
-  <updated>2019-11-21T13:49:34.995Z</updated>
+  <updated>2019-11-27T08:57:31.366Z</updated>
   <id>https://asahihuang.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ThinkpadP51 Catalina</title>
+    <link href="https://asahihuang.github.io/ThinkpadP51-Catalina/"/>
+    <id>https://asahihuang.github.io/ThinkpadP51-Catalina/</id>
+    <published>2019-11-27T08:42:29.000Z</published>
+    <updated>2019-11-27T08:57:31.366Z</updated>
+    
+    <content type="html"><![CDATA[<p>​        之前有发过 Mojava 的版本，这次补上 Catalina ，EFI<a href="https://github.com/AsahiHuang/ThinkPadP51-Hackintosh-Catalina" target="_blank" rel="noopener">下载地址</a>，关于其他信息说明可以参考 Mojava 的 <a href="https://github.com/AsahiHuang/ThinkPad-P51-Hackintosh-Mojave" target="_blank" rel="noopener">repo</a></p><p><img src="https://files.catbox.moe/2f4k7m.png" alt></p><a id="more"></a><blockquote><p>2019.11.25</p><p>更新到 Catalina 15.2 beta 19C46a</p></blockquote><h2 id="Mojava-升级到-Catalina-注意"><a href="#Mojava-升级到-Catalina-注意" class="headerlink" title="Mojava 升级到 Catalina 注意"></a>Mojava 升级到 Catalina 注意</h2><p>​        可能已经有所了解，Apple 这次是铁了心的要干掉32位软件，所以 Catalina 及之后版本都不可能再支持 32位软件，这导致原本许多应用特别是游戏都无法在新系统上运行，而唯一的解决办法是等软件更新支持或者在新系统上运行虚拟机跑 Mojava 环境，所以你需要权衡带来的影响。</p><h2 id="sidecar-功能"><a href="#sidecar-功能" class="headerlink" title="sidecar 功能"></a>sidecar 功能</h2><p><img src="https://files.catbox.moe/6skbe8.png" alt></p><p>​        这次更新的重点功能之一就是 sidecar 随航实现 iPad 上投屏，具体功能可在官网查询到，关与网卡因为我用的是原生网卡+转接卡，转接卡+原生网卡94360cs2 是放置在 WWAN 槽位（只有WWAN 位是足够放下 cs2，然后通过一条软排线连接一个标准 m.2 2230卡上。</p><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>​        16寸的价格真香啊。。。不过还是更喜欢13寸（现在这个大家伙拿出去真的残念），下次一定买一台轻薄的，期待13寸的更新。下一台电脑一定 Mac 了。</p><p>2019.11.27<br>Asahi Huang</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;​        之前有发过 Mojava 的版本，这次补上 Catalina ，EFI&lt;a href=&quot;https://github.com/AsahiHuang/ThinkPadP51-Hackintosh-Catalina&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;下载地址&lt;/a&gt;，关于其他信息说明可以参考 Mojava 的 &lt;a href=&quot;https://github.com/AsahiHuang/ThinkPad-P51-Hackintosh-Mojave&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;repo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://files.catbox.moe/2f4k7m.png&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="黑苹果" scheme="https://asahihuang.github.io/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>删除字符串中所有相邻重复项</title>
