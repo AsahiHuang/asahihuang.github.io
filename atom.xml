@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://asahihuang.github.io/"/>
-  <updated>2019-12-31T11:25:37.641Z</updated>
+  <updated>2020-01-13T02:02:33.663Z</updated>
   <id>https://asahihuang.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>E231系电车全部退出山手线运营</title>
+    <link href="https://asahihuang.github.io/E231%E7%B3%BB%E7%94%B5%E8%BD%A6%E5%85%A8%E9%83%A8%E9%80%80%E5%87%BA%E5%B1%B1%E6%89%8B%E7%BA%BF%E8%BF%90%E8%90%A5/"/>
+    <id>https://asahihuang.github.io/E231系电车全部退出山手线运营/</id>
+    <published>2020-01-13T01:22:23.000Z</published>
+    <updated>2020-01-13T02:02:33.663Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://files.catbox.moe/1bb0k3.jpeg" alt></p><blockquote><p>“男人就像山手线，稍微等一会下一班就来了。”</p><p>高嶋知佐子</p></blockquote><p><strong>但你再也等不来E231了</strong></p><a id="more"></a><h2 id="什么是山手线"><a href="#什么是山手线" class="headerlink" title="什么是山手线"></a>什么是山手线</h2><blockquote><p><strong>山手线</strong>（日语：山手線／やまのてせん <em>Yamanote sen</em> ）是位于日本东京的铁路线鐵路線，由东日本旅客铁道東日本旅客鐵道)（JR东日本）运营。做为运行系统的山手线。自1885年3月1日开业以来，山手线已发展为东京都心首要的公众运输动脉，现与都营大江户线并列为东京两大环城铁路。</p><p><a href="[https://zh.wikipedia.org/wiki/%E5%B1%B1%E6%89%8B%E7%B7%9A](https://zh.wikipedia.org/wiki/山手線)">山手線_维基百科</a></p></blockquote><h2 id="现运营车辆"><a href="#现运营车辆" class="headerlink" title="现运营车辆"></a>现运营车辆</h2><p>E231系500番台    运营时间2002-2020</p><p><img src="https://files.catbox.moe/sf2sy4.jpeg" alt="E231 500番台"></p><p>E235系 运营时间2014-现在</p><p><img src="https://files.catbox.moe/hl5ccl.jpeg" alt="E235"></p><p>山手线最后一辆E231系500番台与2020年1月10日最后运营。由1月11日起，山手线全线使用E235系。而退出运营的E231都会被刷黄用于中央总武线。</p><h2 id="官方纪念活动"><a href="#官方纪念活动" class="headerlink" title="官方纪念活动"></a>官方纪念活动</h2><p>运营方JR东日本为了纪念山手线上E231系的全部退出运营也将在2020年1月18日举行官方纪念活动，这种情怀感以及浓厚的铁道文化实在让人羡慕啊。我估计上海地铁老老八和西瓜退役的时候官方也会组织一下，特别是能加强与铁丝们的互动从而拉近之间的距离。</p><p><img src="https://files.catbox.moe/ua7hf3.jpeg" alt="山手线E231系纪念活动招牌"></p><p>​    </p><p>AsahiHuang<br>2020.1.13</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://files.catbox.moe/1bb0k3.jpeg&quot; alt&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“男人就像山手线，稍微等一会下一班就来了。”&lt;/p&gt;
+&lt;p&gt;高嶋知佐子&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;但你再也等不来E231了&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="铁道" scheme="https://asahihuang.github.io/tags/%E9%93%81%E9%81%93/"/>
+    
+  </entry>
   
   <entry>
     <title>西历2019小结</title>
@@ -82,9 +107,9 @@
       <category term="leetcode" scheme="https://asahihuang.github.io/categories/leetcode/"/>
     
     
-      <category term="栈" scheme="https://asahihuang.github.io/tags/%E6%A0%88/"/>
-    
       <category term="数据结构" scheme="https://asahihuang.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="栈" scheme="https://asahihuang.github.io/tags/%E6%A0%88/"/>
     
       <category term="leetcode" scheme="https://asahihuang.github.io/tags/leetcode/"/>
     
@@ -108,9 +133,9 @@
       <category term="笔记" scheme="https://asahihuang.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="栈" scheme="https://asahihuang.github.io/tags/%E6%A0%88/"/>
-    
       <category term="数据结构" scheme="https://asahihuang.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="栈" scheme="https://asahihuang.github.io/tags/%E6%A0%88/"/>
     
   </entry>
   
@@ -155,9 +180,9 @@
       <category term="笔记" scheme="https://asahihuang.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="数据结构" scheme="https://asahihuang.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
       <category term="单链表" scheme="https://asahihuang.github.io/tags/%E5%8D%95%E9%93%BE%E8%A1%A8/"/>
+    
+      <category term="数据结构" scheme="https://asahihuang.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
@@ -180,9 +205,9 @@
       <category term="笔记" scheme="https://asahihuang.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="数据结构" scheme="https://asahihuang.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
       <category term="单链表" scheme="https://asahihuang.github.io/tags/%E5%8D%95%E9%93%BE%E8%A1%A8/"/>
+    
+      <category term="数据结构" scheme="https://asahihuang.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
