@@ -84,7 +84,7 @@ theme: icarus
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:asahihuang/asahihuang.github.io.git
+  repository: git@18.177.28.71:blog.git
   branch: master
 
 aboutme: 应该没有人会看
