@@ -1,9 +1,9 @@
 ---
-title: ThinkpadP51 Catalina
+title: Thinkpad-P51-Hackintosh-Catalina
 date: 2019-11-27 16:42:29
 tags: 黑苹果
-categories:
-header_image:
+categories: Hackintosh
+thumbnail: https://images-asahih-com.s3.ap-northeast-1.amazonaws.com/blog/2020/04/06/hG2Muio%20%281%29.png
 ---
 
 ​		之前有发过 Mojava 的版本，这次补上 Catalina ，EFI[下载地址](https://github.com/AsahiHuang/ThinkPadP51-Hackintosh-Catalina)，关于其他信息说明可以参考 Mojava 的 [repo](https://github.com/AsahiHuang/ThinkPad-P51-Hackintosh-Mojave)，QQ讨论群：951898568
