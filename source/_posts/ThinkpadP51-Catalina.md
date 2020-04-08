@@ -8,9 +8,9 @@ thumbnail: https://images-asahih-com.s3.ap-northeast-1.amazonaws.com/blog/2020/0
 
 ​		之前有发过 Mojava 的版本，这次补上 Catalina ，EFI[下载地址](https://github.com/AsahiHuang/ThinkPadP51-Hackintosh-Catalina)，关于其他信息说明可以参考 Mojava 的 [repo](https://github.com/AsahiHuang/ThinkPad-P51-Hackintosh-Mojave)，QQ讨论群：951898568
 
-![](https://images-asahih-com.s3.ap-northeast-1.amazonaws.com/blog/2020/04/04/截屏2020-04-04%2012.23.51.png)
-
 <!--more-->
+
+![](https://images-asahih-com.s3.ap-northeast-1.amazonaws.com/blog/2020/04/04/截屏2020-04-04%2012.23.51.png)
 
 > 2019.11.25
 >

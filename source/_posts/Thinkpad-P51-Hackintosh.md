@@ -6,11 +6,11 @@ categories: Hackintosh
 thumbnail: https://images-asahih-com.s3.ap-northeast-1.amazonaws.com/blog/2020/04/06/hG2Muio%20%281%29.png
 ---
 
-![](https://files.catbox.moe/kzk7o9.png)
-
-
+Mojave 14.6
 
 <!--more-->
+
+![无视10.15](https://files.catbox.moe/kzk7o9.png)
 
 ## EFI
 
